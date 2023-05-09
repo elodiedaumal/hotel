@@ -35,19 +35,28 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to='/'
+            to='/rooms'
             className='block mt-4  text-teal-200 hover:text-white mr-4'
           >
-            Our Rooms
+            Rooms
           </Link>
-          <Link to='/' className='block mt-4  text-teal-200 hover:text-white'>
-            Restaurant
+          <Link
+            to='/cafe'
+            className='block mt-4  text-teal-200 hover:text-white'
+          >
+            Café de la Baie
           </Link>
-          <Link to='/' className='block mt-4  text-teal-200 hover:text-white'>
-            Contact
-          </Link>
-          <Link to='/' className='block mt-4  text-teal-200 hover:text-white'>
+          <Link
+            to='/tourism'
+            className='block mt-4  text-teal-200 hover:text-white'
+          >
             Tourism
+          </Link>
+          <Link
+            to='/contact'
+            className='block mt-4  text-teal-200 hover:text-white'
+          >
+            Contact
           </Link>
           <button>
             <Link
@@ -60,7 +69,7 @@ const Navbar = () => {
         </div>
       </div>
       {sidebar && (
-        <aside className='block h-screen w-3/4  md:hidden absolute top-0 right-0 bg-teal-500 p-10 mt-32 z-50'>
+        <aside className='block h-screen w-3/4  md:hidden absolute top-0 right-0 bg-teal-500 p-10 pt-32 z-30'>
           <div className='text-lg'>
             <Link
               onClick={openSidebar}
@@ -72,10 +81,10 @@ const Navbar = () => {
 
             <Link
               onClick={openSidebar}
-              to='/'
+              to='/rooms'
               className='block mt-4  text-teal-200 hover:text-white mr-4'
             >
-              Our Rooms
+              Rooms
             </Link>
             <Link
               onClick={openSidebar}
