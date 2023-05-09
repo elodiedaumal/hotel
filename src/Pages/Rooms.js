@@ -10,6 +10,7 @@ const Rooms = () => {
     selectPrice,
     text,
     setText,
+    seaview,
   } = useGlobalContext();
 
   if (loading) {
@@ -24,6 +25,16 @@ const Rooms = () => {
       <div className='grid md:grid-cols-3 gap-5'>
         {rooms
           .sort((a, b) => b.price.total - a.price.rate)
+          .filter((item) =>
+            text === ''
+              ? true
+              : item.name.toLowerCase().includes(text.toLowerCase())
+          )
+          .filter((item) =>
+            seaview === 'yes'
+              ? item.name.toLowerCase().includes('sea view'.toLowerCase())
+              : true
+          )
           .filter((room) => room.persons === selectGuests)
           .filter((room) => room.price.rate < selectPrice)
           .filter((room) => room.bedrooms === selectBedrooms)
