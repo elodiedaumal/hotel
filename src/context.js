@@ -5,14 +5,15 @@ import { RoomsData } from './utils';
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [loading, setLoading] = useState(false);
-  const [rooms, setRooms] = useState(RoomsData);
+  const [loading, setLoading] = useState(true);
+  const [rooms, setRooms] = useState([]);
   const [text, setText] = useState('');
   const [selectGuests, setSelectGuests] = useState(2);
-  const [selectBedrooms, setSelectBedrooms] = useState('all');
-  const [selectPrice, setSelectPrice] = useState(175);
+  const [selectBedrooms, setSelectBedrooms] = useState(0);
+
   const [seaview, setSeaview] = useState('all');
   const [Type, setType] = useState('all');
+  const [sliderValue, setSliderValue] = useState(200);
 
   // const optionsairbnb = {
   //   method: 'GET',
@@ -46,9 +47,10 @@ const AppProvider = ({ children }) => {
   //   setLoading(false);
   // }
 
-  // useEffect(() => {
-  //   getRoomsAirbnb();
-  // }, []);
+  useEffect(() => {
+    setLoading(false);
+    setRooms(RoomsData);
+  }, []);
 
   const selectguests = (e) => {
     setSelectGuests(Number(e.target.value));
@@ -56,9 +58,7 @@ const AppProvider = ({ children }) => {
   const selectbedrooms = (e) => {
     setSelectBedrooms(Number(e.target.value));
   };
-  const selectprice = (e) => {
-    setSelectPrice(Number(e.target.value));
-  };
+
   const selectview = (e) => {
     setSeaview(e.target.value);
   };
@@ -77,12 +77,13 @@ const AppProvider = ({ children }) => {
         selectguests,
         selectbedrooms,
         selectBedrooms,
-        selectprice,
-        selectPrice,
+
         seaview,
         selectview,
         selectype,
         Type,
+        sliderValue,
+        setSliderValue,
       }}
     >
       {children}

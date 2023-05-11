@@ -7,14 +7,12 @@ const Rooms = () => {
     rooms,
     selectGuests,
     selectBedrooms,
-    selectPrice,
     text,
     setText,
     seaview,
     Type,
+    sliderValue,
   } = useGlobalContext();
-
-  console.log(selectBedrooms);
 
   if (loading) {
     return <div className='loading'></div>;
@@ -25,7 +23,7 @@ const Rooms = () => {
         Our Rooms
       </h2>
       <Filters text={text} setText={setText} />
-      <div className='grid md:grid-cols-3 gap-5'>
+      <div className='grid md:grid-cols-3 gap-x-5 gap-y-10'>
         {rooms
           .sort((a, b) => b.prix - a.prix)
           .filter((item) =>
@@ -38,19 +36,20 @@ const Rooms = () => {
           .filter((room) =>
             selectGuests !== 2 ? room.travelers === selectGuests : room
           )
-          .filter((room) => room.prix < selectPrice)
+
           .filter((room) =>
             selectBedrooms !== 0 ? room.bedroom === selectBedrooms : room
           )
+          .filter((item) => item.prix < sliderValue)
           .map((room) => (
             <div key={room.id}>
               <img
-                className='w-[400px] h-[250px] rounded-md'
+                className=' h-[250px] rounded-md'
                 src={room.images[0]}
                 alt={room.name}
               />
               <div className='grid grid-rows-2 jus'>
-                <h3 className='font-bold h-[56px]'>{room.name}</h3>
+                <h3 className='font-bold '>{room.name}</h3>
                 <div className='flex justify-between text-teal-500 text-[15px] font-bold'>
                   <h4>Ideal for: {room.travelers} persons</h4>
                   <h4>Price from: {room.prix}€</h4>

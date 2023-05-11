@@ -1,10 +1,11 @@
 import { useGlobalContext } from '../context';
+import Range from './Range';
 
 const Filters = () => {
   const {
     selectguests,
     selectbedrooms,
-    selectprice,
+
     text,
     setText,
     selectview,
@@ -15,9 +16,11 @@ const Filters = () => {
     setText(e.target.value);
   };
 
+  const flexfilter = 'flex flex-col gap-2';
+
   return (
     <section className='flex justify-between'>
-      <form className='flex flex-col'>
+      <form className={flexfilter}>
         <label htmlFor='guests'>Name of the room</label>
         <input
           type='text'
@@ -29,7 +32,7 @@ const Filters = () => {
         />
       </form>
 
-      <form className='flex flex-col'>
+      <form className={flexfilter}>
         <label htmlFor='guests'>N° of guests:</label>
         <select
           className='mb-5 border-2 p-1 rounded-md '
@@ -44,7 +47,7 @@ const Filters = () => {
         </select>
       </form>
 
-      <form className='flex flex-col'>
+      <form className={flexfilter}>
         <label htmlFor='bedrooms'>N° of Bedrooms:</label>
         <select
           className='mb-5 border-2 p-1 rounded-md'
@@ -57,7 +60,7 @@ const Filters = () => {
           <option value='2'>2-bedrooms</option>
         </select>
       </form>
-      <form className='flex flex-col'>
+      <form className={flexfilter}>
         <label htmlFor='Type'>Type d'hébergement:</label>
         <select
           className='mb-5 border-2 p-1 rounded-md'
@@ -71,7 +74,7 @@ const Filters = () => {
           <option value='Appartement'>Appartement</option>
         </select>
       </form>
-      <form className='flex flex-col'>
+      <form className={flexfilter}>
         <label htmlFor='bedrooms'>Sea View:</label>
         <select
           className='mb-5 border-2 p-1 rounded-md'
@@ -84,22 +87,7 @@ const Filters = () => {
         </select>
       </form>
 
-      <form className='flex flex-col'>
-        <label htmlFor='Price'>Price:</label>
-        <select
-          className='mb-5 border-2 p-1 rounded-md'
-          name='Price'
-          id='price'
-          onChange={selectprice}
-        >
-          <option value='200'>Less than 200€</option>
-          <option value='150'>Less than 150€</option>
-          <option value='130'>Less than 130€</option>
-          <option value='100'>Less than 110€</option>
-          <option value='90'>Less than 90€</option>
-          <option value='80'>Less than 80€</option>
-        </select>
-      </form>
+      <Range />
     </section>
   );
 };
