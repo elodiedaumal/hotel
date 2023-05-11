@@ -1,9 +1,6 @@
 import React from 'react';
-import { useGlobalContext } from '../context';
 
 const Hero = () => {
-  const { rooms, loading } = useGlobalContext();
-
   return (
     <section className='mb-20'>
       <div className=" bg-[url('../public/front.jpg')] w-full h-[500px] bg-cover text-center flex justify-center items-center bg-center  ">

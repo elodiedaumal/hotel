@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <Map />
       <Featured />
       <Important />
       <Gallery />
       <Reviews />
-      <Map />
     </>
   );
 };

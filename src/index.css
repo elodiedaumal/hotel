@@ -26,7 +26,6 @@
 }
 
 .map-container {
-  height: 20rem;
-  width: 50rem;
-  margin: 1rem auto;
+  height: 25rem;
+  width: 100%;
 }
