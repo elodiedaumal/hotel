@@ -14,7 +14,9 @@ const Navbar = () => {
     <nav className='flex items-center justify-between flex-wrap bg-teal-500 p-6 '>
       <div className='flex items-center flex-shrink-0 text-white mr-6'>
         <div className='w-32 h-32 rounded-full bg-white p-2 flex justify-center items-center'>
-          <img className='' src={Logo} alt='hotel de la baie ' />
+          <Link to='/'>
+            <img className='' src={Logo} alt='hotel de la baie ' />
+          </Link>
         </div>
       </div>
       <div className='block md:hidden'>
