@@ -24,7 +24,7 @@ const Rooms = () => {
       <Filters text={text} setText={setText} />
       <div className='grid md:grid-cols-3 gap-5'>
         {rooms
-          .sort((a, b) => b.price.total - a.price.rate)
+          .sort((a, b) => b.prix - a.prix)
           .filter((item) =>
             text === ''
               ? true
@@ -32,24 +32,24 @@ const Rooms = () => {
           )
           .filter((item) =>
             seaview === 'yes'
-              ? item.name.toLowerCase().includes('sea view'.toLowerCase())
+              ? item.name.toLowerCase().includes('mer'.toLowerCase())
               : true
           )
-          .filter((room) => room.persons === selectGuests)
-          .filter((room) => room.price.rate < selectPrice)
-          .filter((room) => room.bedrooms === selectBedrooms)
+          .filter((room) => room.travelers === selectGuests)
+          .filter((room) => room.prix < selectPrice)
+          .filter((room) => room.bed === selectBedrooms)
           .map((room) => (
             <div key={room.id}>
-              <img
+              {/* <img
                 className='w-[400px] h-[250px] rounded-md'
                 src={room.images[0]}
                 alt={room.name}
-              />
+              /> */}
               <div className='grid grid-rows-2 jus'>
                 <h3 className='font-bold h-[56px]'>{room.name}</h3>
                 <div className='flex justify-between text-teal-500 text-[15px] font-bold'>
-                  <h4>Ideal for: {room.persons} persons</h4>
-                  <h4>Price: {room.price.total}€</h4>
+                  <h4>Ideal for: {room.travelers} persons</h4>
+                  <h4>Price from: {room.prix}€</h4>
                 </div>
               </div>
             </div>
