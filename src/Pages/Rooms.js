@@ -33,9 +33,7 @@ const Rooms = () => {
           )
           .filter((item) => (seaview === 'yes' ? item.seaView : item))
           .filter((item) => (Type !== 'all' ? item.category === Type : true))
-          .filter((room) =>
-            selectGuests !== 2 ? room.travelers === selectGuests : room
-          )
+          .filter((room) => room.travelers >= selectGuests)
 
           .filter((room) =>
             selectBedrooms !== 0 ? room.bedroom === selectBedrooms : room
