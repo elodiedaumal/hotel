@@ -8,6 +8,7 @@ const Filters = () => {
     text,
     setText,
     selectview,
+    selectype,
   } = useGlobalContext();
 
   const handleSubmit = (e) => {
@@ -38,6 +39,7 @@ const Filters = () => {
         >
           <option value='2'>2-persons</option>
           <option value='4'>4-persons</option>
+          <option value='5'>5-persons</option>
           <option value='6'>6-persons</option>
         </select>
       </form>
@@ -50,9 +52,23 @@ const Filters = () => {
           id='bedrooms'
           onChange={selectbedrooms}
         >
+          <option value='0'>All</option>
           <option value='1'>1-bedroom</option>
           <option value='2'>2-bedrooms</option>
-          <option value='3'>3-bedrooms</option>
+        </select>
+      </form>
+      <form className='flex flex-col'>
+        <label htmlFor='Type'>Type d'hébergement:</label>
+        <select
+          className='mb-5 border-2 p-1 rounded-md'
+          name='Type'
+          id='Type'
+          onChange={selectype}
+        >
+          <option value='all'>All</option>
+          <option value='Hotel'>Hotel</option>
+          <option value='Gîte'>Gîte</option>
+          <option value='Appartement'>Appartement</option>
         </select>
       </form>
       <form className='flex flex-col'>
@@ -76,10 +92,12 @@ const Filters = () => {
           id='price'
           onChange={selectprice}
         >
-          <option value='125'>Less than 125€</option>
-          <option value='100'>Less than 100€</option>
-          <option value='75'>Less than 75€</option>
-          <option value='50'>Less than 50€</option>
+          <option value='200'>Less than 200€</option>
+          <option value='150'>Less than 150€</option>
+          <option value='130'>Less than 130€</option>
+          <option value='100'>Less than 110€</option>
+          <option value='90'>Less than 90€</option>
+          <option value='80'>Less than 80€</option>
         </select>
       </form>
     </section>

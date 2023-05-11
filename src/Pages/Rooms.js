@@ -11,7 +11,10 @@ const Rooms = () => {
     text,
     setText,
     seaview,
+    Type,
   } = useGlobalContext();
+
+  console.log(selectBedrooms);
 
   if (loading) {
     return <div className='loading'></div>;
@@ -30,21 +33,22 @@ const Rooms = () => {
               ? true
               : item.name.toLowerCase().includes(text.toLowerCase())
           )
-          .filter((item) =>
-            seaview === 'yes'
-              ? item.name.toLowerCase().includes('mer'.toLowerCase())
-              : true
+          .filter((item) => (seaview === 'yes' ? item.seaView : item))
+          .filter((item) => (Type !== 'all' ? item.category === Type : true))
+          .filter((room) =>
+            selectGuests !== 2 ? room.travelers === selectGuests : room
           )
-          .filter((room) => room.travelers === selectGuests)
           .filter((room) => room.prix < selectPrice)
-          .filter((room) => room.bed === selectBedrooms)
+          .filter((room) =>
+            selectBedrooms !== 0 ? room.bedroom === selectBedrooms : room
+          )
           .map((room) => (
             <div key={room.id}>
-              {/* <img
+              <img
                 className='w-[400px] h-[250px] rounded-md'
                 src={room.images[0]}
                 alt={room.name}
-              /> */}
+              />
               <div className='grid grid-rows-2 jus'>
                 <h3 className='font-bold h-[56px]'>{room.name}</h3>
                 <div className='flex justify-between text-teal-500 text-[15px] font-bold'>

@@ -1,3 +1,84 @@
+import dixmude1 from './Images/dixmude/4.jpg';
+import dixmude2 from './Images/dixmude/2.jpg';
+import dixmude3 from './Images/dixmude/3.jpg';
+import dixmude4 from './Images/dixmude/1.jpg';
+import dixmude5 from './Images/dixmude/5.jpg';
+import kador1 from './Images/kador/1.jpg';
+import kador2 from './Images/kador/2.jpg';
+import kador3 from './Images/kador/3.jpg';
+import kador4 from './Images/kador/4.jpg';
+import kador5 from './Images/kador/5.jpg';
+import kador6 from './Images/kador/6.jpg';
+import kador7 from './Images/kador/7.jpg';
+import cabestan1 from './Images/cabestan/3.jpg';
+import cabestan2 from './Images/cabestan/2.jpg';
+import cabestan3 from './Images/cabestan/1.jpg';
+import cabestan4 from './Images/cabestan/4.jpg';
+import cabestan5 from './Images/cabestan/5.jpg';
+import cabestan6 from './Images/cabestan/6.jpg';
+import cabestan7 from './Images/cabestan/7.jpg';
+import cabestan8 from './Images/cabestan/8.jpg';
+import cabestan9 from './Images/cabestan/9.jpg';
+import cabestan10 from './Images/cabestan/10.jpg';
+import portzic1 from './Images/portzic/4.jpg';
+import portzic2 from './Images/portzic/2.jpg';
+import portzic3 from './Images/portzic/3.jpg';
+import portzic4 from './Images/portzic/1.jpg';
+import portzic5 from './Images/portzic/5.jpg';
+import portzic6 from './Images/portzic/6.jpg';
+import portzic7 from './Images/portzic/7.jpg';
+import portzic8 from './Images/portzic/8.jpg';
+import portzic9 from './Images/portzic/9.jpg';
+import portzic10 from './Images/portzic/10.jpg';
+import portzic11 from './Images/portzic/11.jpg';
+import soleil1 from './Images/soleil/1.jpg';
+import soleil2 from './Images/soleil/2.jpg';
+import soleil3 from './Images/soleil/3.jpg';
+import soleil4 from './Images/soleil/4.jpg';
+import soleil5 from './Images/soleil/5.jpg';
+import soleil6 from './Images/soleil/6.jpg';
+import soleil7 from './Images/soleil/7.jpg';
+import soleil8 from './Images/soleil/8.jpg';
+import DVM1 from './Images/DVM/1.jpg';
+import DVM2 from './Images/DVM/2.jpg';
+import DVM3 from './Images/DVM/3.jpg';
+import DVM4 from './Images/DVM/4.jpg';
+import DVM5 from './Images/DVM/5.jpg';
+import DVM6 from './Images/DVM/6.jpg';
+import DVM7 from './Images/DVM/7.jpg';
+import DVM8 from './Images/DVM/8.jpg';
+import DVC1 from './Images/DVC/2.jpg';
+import DVC2 from './Images/DVC/1.jpg';
+import DVC3 from './Images/DVC/3.jpg';
+import DVC4 from './Images/DVC/4.jpg';
+import eco1 from './Images/eco/1.jpg';
+import eco2 from './Images/eco/2.jpg';
+import eco3 from './Images/eco/3.jpg';
+import gitedouble1 from './Images/gitedouble/4.jpg';
+import gitedouble2 from './Images/gitedouble/2.jpg';
+import gitedouble3 from './Images/gitedouble/3.jpg';
+import gitedouble4 from './Images/gitedouble/1.jpg';
+import gitedouble5 from './Images/gitedouble/5.jpg';
+import gitetwin1 from './Images/gitetwin/1.jpg';
+import gitetwin2 from './Images/gitetwin/2.jpg';
+import gitetwin3 from './Images/gitetwin/3.jpg';
+import gitetwin4 from './Images/gitetwin/4.jpg';
+import GSD1 from './Images/GSD/1.jpg';
+import GSD2 from './Images/GSD/2.jpg';
+import GSD3 from './Images/GSD/3.jpg';
+import GST1 from './Images/GST/1.jpg';
+import GST2 from './Images/GST/2.jpg';
+import GST3 from './Images/GST/3.jpg';
+import GST4 from './Images/GST/4.jpg';
+import studio1 from './Images/studio/2.jpg';
+import studio2 from './Images/studio/1.jpg';
+import studio3 from './Images/studio/3.jpg';
+import studio4 from './Images/studio/4.jpg';
+import TVM1 from './Images/TVM/3.jpg';
+import TVM2 from './Images/TVM/2.jpg';
+import TVM3 from './Images/TVM/1.jpg';
+import TVM4 from './Images/TVM/4.jpg';
+
 export const RoomsData = [
   {
     id: 1,
@@ -10,9 +91,10 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     seaView: true,
-    images: {},
+    images: [DVM1, DVM2, DVM3, DVM4, DVM5, DVM6, DVM7, DVM8],
   },
   {
     id: 2,
@@ -25,25 +107,14 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     seaView: false,
+    images: [DVC1, DVC2, DVC3, DVC4],
   },
+
   {
     id: 3,
-    stock: 2,
-    name: 'Chambre twin standard vue cour',
-    prix: 80,
-    category: 'Hotel',
-    address: '46, boulevard de la plage',
-    travelers: 2,
-    breakfast: '15€',
-    bathroom: 'shower',
-    bed: 2,
-    bedType: 'twin',
-    seaView: false,
-  },
-  {
-    id: 4,
     stock: 2,
     name: 'Chambre twin standard vue mer',
     prix: 90,
@@ -53,11 +124,13 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 2,
+    bedroom: 1,
     bedType: 'twin',
     seaView: true,
+    images: [TVM1, TVM2, TVM3, TVM4],
   },
   {
-    id: 5,
+    id: 4,
     stock: 2,
     name: 'Studio double vue mer',
     prix: 110,
@@ -67,12 +140,14 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     seaView: true,
     kitchen: true,
+    images: [studio1, studio2, studio3, studio4],
   },
   {
-    id: 6,
+    id: 5,
     stock: 2,
     name: 'Chambre double economique vue mer (12m²)',
     prix: 85,
@@ -82,11 +157,13 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     seaView: true,
+    images: [eco1, eco2, eco3],
   },
   {
-    id: 7,
+    id: 6,
     stock: 2,
     name: 'Grand studio double vue mer',
     prix: 150,
@@ -96,11 +173,13 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
-    sofa: 1,
+    bedroom: 1,
+    sofa: 2,
     bedType: 'double',
     seaView: true,
     kitchen: true,
     livingRoom: true,
+    images: [GSD1, GSD2, GSD3],
   },
   {
     id: 7,
@@ -113,16 +192,18 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 2,
-    sofa: 2,
+    bedroom: 1,
+    sofa: 1,
     bedType: 'twin',
     seaView: true,
     kitchen: true,
     livingRoom: true,
+    images: [GST1, GST2, GST3, GST4],
   },
   {
     id: 8,
-    stock: 5,
-    name: 'Chambre double',
+    stock: 2,
+    name: 'Chambre double au gîte',
     prix: 70,
     category: 'Gîte',
     address: '13 Rue Garn An Aod',
@@ -130,13 +211,15 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     kitchen: 'En Commun',
+    images: [gitedouble1, gitedouble2, gitedouble3, gitedouble4, gitedouble5],
   },
   {
     id: 9,
     stock: 5,
-    name: 'Chambre twin',
+    name: 'Chambre twin au gîte',
     prix: 70,
     category: 'Gîte',
     address: '13 Rue Garn An Aod',
@@ -144,8 +227,19 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'twin',
     kitchen: 'En Commun',
+    images: [
+      gitetwin1,
+      gitetwin2,
+      gitetwin3,
+      gitetwin4,
+      gitedouble2,
+      gitedouble3,
+      gitedouble2,
+      gitedouble1,
+    ],
   },
   {
     id: 10,
@@ -158,10 +252,12 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     kitchen: true,
     sofa: 1,
     livingRoom: true,
+    images: [dixmude1, dixmude2, dixmude3, dixmude4, dixmude5],
   },
   {
     id: 11,
@@ -174,10 +270,12 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     kitchen: true,
     sofa: 1,
     livingRoom: true,
+    images: [kador1, kador2, kador3, kador4, kador5, kador6, kador7],
   },
   {
     id: 12,
@@ -186,19 +284,37 @@ export const RoomsData = [
     prix: 150,
     category: 'Appartement',
     address: `1 Rue de l'Atlantique`,
-    travelers: 4,
+    travelers: 5,
     breakfast: '15€',
     bathroom: 'shower',
     bed: 1,
+    bedroom: 1,
     bedType: 'double',
     kitchen: true,
     sofa: 1,
     livingRoom: true,
+    images: [
+      portzic1,
+      portzic2,
+      portzic3,
+      portzic4,
+      portzic5,
+      portzic6,
+      portzic7,
+
+      portzic8,
+
+      portzic9,
+
+      portzic10,
+
+      portzic11,
+    ],
   },
   {
     id: 13,
     stock: 1,
-    name: 'Appartement Le Portzic',
+    name: 'Appartement Le Cabestan',
     prix: 170,
     category: 'Appartement',
     address: `1 Rue de l'Atlantique`,
@@ -206,9 +322,49 @@ export const RoomsData = [
     breakfast: '15€',
     bathroom: 'shower',
     bed: 2,
+    bedroom: 2,
     bedType: 'double',
     kitchen: true,
     sofa: 1,
     livingRoom: true,
+    images: [
+      cabestan1,
+      cabestan2,
+      cabestan3,
+      cabestan4,
+      cabestan5,
+      cabestan6,
+      cabestan7,
+      cabestan8,
+      cabestan9,
+      cabestan10,
+    ],
+  },
+  {
+    id: 14,
+    stock: 1,
+    name: 'Appartement Le Soleil des Flots',
+    prix: 170,
+    category: 'Appartement',
+    address: `4 Place d'Ys`,
+    travelers: 2,
+    breakfast: '15€',
+    bathroom: 'shower',
+    bed: 1,
+    bedroom: 1,
+    bedType: 'double',
+    kitchen: true,
+    livingRoom: true,
+    seaView: true,
+    images: [
+      soleil1,
+      soleil2,
+      soleil3,
+      soleil4,
+      soleil5,
+      soleil6,
+      soleil7,
+      soleil8,
+    ],
   },
 ];

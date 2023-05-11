@@ -9,9 +9,10 @@ const AppProvider = ({ children }) => {
   const [rooms, setRooms] = useState(RoomsData);
   const [text, setText] = useState('');
   const [selectGuests, setSelectGuests] = useState(2);
-  const [selectBedrooms, setSelectBedrooms] = useState(1);
-  const [selectPrice, setSelectPrice] = useState(125);
+  const [selectBedrooms, setSelectBedrooms] = useState('all');
+  const [selectPrice, setSelectPrice] = useState(175);
   const [seaview, setSeaview] = useState('all');
+  const [Type, setType] = useState('all');
 
   // const optionsairbnb = {
   //   method: 'GET',
@@ -61,6 +62,9 @@ const AppProvider = ({ children }) => {
   const selectview = (e) => {
     setSeaview(e.target.value);
   };
+  const selectype = (e) => {
+    setType(e.target.value);
+  };
 
   return (
     <AppContext.Provider
@@ -77,6 +81,8 @@ const AppProvider = ({ children }) => {
         selectPrice,
         seaview,
         selectview,
+        selectype,
+        Type,
       }}
     >
       {children}
