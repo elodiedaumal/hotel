@@ -258,6 +258,7 @@ export const RoomsData = [
     sofa: 1,
     livingRoom: true,
     images: [dixmude1, dixmude2, dixmude3, dixmude4, dixmude5],
+    parking: true,
   },
   {
     id: 'kador',
@@ -276,6 +277,7 @@ export const RoomsData = [
     sofa: 1,
     livingRoom: true,
     images: [kador1, kador2, kador3, kador4, kador5, kador6, kador7],
+    parking: true,
   },
   {
     id: 'portzic',
@@ -310,6 +312,7 @@ export const RoomsData = [
 
       portzic11,
     ],
+    parking: true,
   },
   {
     id: 'cabestan',
@@ -339,6 +342,7 @@ export const RoomsData = [
       cabestan9,
       cabestan10,
     ],
+    parking: true,
   },
   {
     id: 'soleil',
