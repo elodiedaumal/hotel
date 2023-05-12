@@ -226,7 +226,7 @@ export const RoomsData = [
     travelers: 2,
     breakfast: '15€',
     bathroom: 'shower',
-    bed: 1,
+    bed: 2,
     bedroom: 1,
     bedType: 'twin',
     kitchen: 'En Commun',

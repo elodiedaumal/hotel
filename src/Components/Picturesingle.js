@@ -20,7 +20,7 @@ const Picturesingle = ({ images }) => {
               onClick={() => setMainPicture(picture)}
               className={
                 mainPicture === picture
-                  ? 'border-4 border-blue-500 rounded-md  w-32 cursor-pointer object-cover '
+                  ? 'border-4 border-teal-600 rounded-md  h-24 w-32 cursor-pointer object-cover '
                   : 'rounded-md h-24 w-32  cursor-pointer object-cover'
               }
             />

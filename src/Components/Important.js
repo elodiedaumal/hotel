@@ -1,16 +1,16 @@
 import React from 'react';
-import { FaWheelchair } from 'react-icons/fa';
+import { TbWheelchairOff } from 'react-icons/tb';
 
 const Important = () => {
   return (
     <section className='mb-20 mx-auto max-w-5xl mt-10 text-lg px-3 '>
       <h2 className='font-bold text-3xl text-teal-600 mb-10 justify-center items-center text-center gap-10  flex '>
         <span>
-          <FaWheelchair className=' text-2xl ' />
+          <TbWheelchairOff className=' text-2xl ' />
         </span>
         Important informations
         <span>
-          <FaWheelchair className=' text-2xl ' />
+          <TbWheelchairOff className=' text-2xl ' />
         </span>
       </h2>
       <div className='flex gap-5 items-center'>
