@@ -1,5 +1,6 @@
 import Filters from '../Components/Filters';
 import { useGlobalContext } from '../context';
+import { Link } from 'react-router-dom';
 
 const Rooms = () => {
   const {
@@ -41,11 +42,13 @@ const Rooms = () => {
           .filter((item) => item.prix < sliderValue)
           .map((room) => (
             <div key={room.id}>
-              <img
-                className=' h-[250px] rounded-md'
-                src={room.images[0]}
-                alt={room.name}
-              />
+              <Link to={`/${room.id}`}>
+                <img
+                  className=' h-[250px] rounded-md'
+                  src={room.images[0]}
+                  alt={room.name}
+                />
+              </Link>
               <div className='grid grid-rows-2 jus'>
                 <h3 className='font-bold '>{room.name}</h3>
                 <div className='flex justify-between text-teal-500 text-[15px] font-bold'>

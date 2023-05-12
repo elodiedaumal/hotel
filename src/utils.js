@@ -81,7 +81,7 @@ import TVM4 from './Images/TVM/4.jpg';
 
 export const RoomsData = [
   {
-    id: 1,
+    id: 'doublevuemer',
     stock: 4,
     name: 'Chambre double standard vue mer',
     prix: 90,
@@ -97,7 +97,7 @@ export const RoomsData = [
     images: [DVM1, DVM2, DVM3, DVM4, DVM5, DVM6, DVM7, DVM8],
   },
   {
-    id: 2,
+    id: 'doublevuecour',
     stock: 4,
     name: 'Chambre double standard vue cour',
     prix: 80,
@@ -114,7 +114,7 @@ export const RoomsData = [
   },
 
   {
-    id: 3,
+    id: 'twinvuemer',
     stock: 2,
     name: 'Chambre twin standard vue mer',
     prix: 90,
@@ -130,7 +130,7 @@ export const RoomsData = [
     images: [TVM1, TVM2, TVM3, TVM4],
   },
   {
-    id: 4,
+    id: 'studio',
     stock: 2,
     name: 'Studio double vue mer',
     prix: 110,
@@ -147,7 +147,7 @@ export const RoomsData = [
     images: [studio1, studio2, studio3, studio4],
   },
   {
-    id: 5,
+    id: 'economique',
     stock: 2,
     name: 'Chambre double economique vue mer (12m²)',
     prix: 85,
@@ -163,7 +163,7 @@ export const RoomsData = [
     images: [eco1, eco2, eco3],
   },
   {
-    id: 6,
+    id: 'grandstudiodouble',
     stock: 2,
     name: 'Grand studio double vue mer',
     prix: 150,
@@ -182,7 +182,7 @@ export const RoomsData = [
     images: [GSD1, GSD2, GSD3],
   },
   {
-    id: 7,
+    id: 'grandstudiotwin',
     stock: 2,
     name: 'Grand studio twin vue mer',
     prix: 150,
@@ -201,7 +201,7 @@ export const RoomsData = [
     images: [GST1, GST2, GST3, GST4],
   },
   {
-    id: 8,
+    id: 'gitedouble',
     stock: 2,
     name: 'Chambre double au gîte',
     prix: 70,
@@ -217,7 +217,7 @@ export const RoomsData = [
     images: [gitedouble1, gitedouble2, gitedouble3, gitedouble4, gitedouble5],
   },
   {
-    id: 9,
+    id: 'gitetwin',
     stock: 5,
     name: 'Chambre twin au gîte',
     prix: 70,
@@ -242,7 +242,7 @@ export const RoomsData = [
     ],
   },
   {
-    id: 10,
+    id: 'dixmude',
     stock: 1,
     name: 'Appartement Le Dixmude',
     prix: 150,
@@ -260,7 +260,7 @@ export const RoomsData = [
     images: [dixmude1, dixmude2, dixmude3, dixmude4, dixmude5],
   },
   {
-    id: 11,
+    id: 'kador',
     stock: 1,
     name: 'Appartement Le Kador',
     prix: 150,
@@ -278,7 +278,7 @@ export const RoomsData = [
     images: [kador1, kador2, kador3, kador4, kador5, kador6, kador7],
   },
   {
-    id: 12,
+    id: 'portzic',
     stock: 1,
     name: 'Appartement Le Portzic',
     prix: 150,
@@ -312,7 +312,7 @@ export const RoomsData = [
     ],
   },
   {
-    id: 13,
+    id: 'cabestan',
     stock: 1,
     name: 'Appartement Le Cabestan',
     prix: 170,
@@ -341,7 +341,7 @@ export const RoomsData = [
     ],
   },
   {
-    id: 14,
+    id: 'soleil',
     stock: 1,
     name: 'Appartement Le Soleil des Flots',
     prix: 170,

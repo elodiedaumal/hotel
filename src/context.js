@@ -10,42 +10,10 @@ const AppProvider = ({ children }) => {
   const [text, setText] = useState('');
   const [selectGuests, setSelectGuests] = useState(2);
   const [selectBedrooms, setSelectBedrooms] = useState(0);
-
   const [seaview, setSeaview] = useState('all');
   const [Type, setType] = useState('all');
   const [sliderValue, setSliderValue] = useState(200);
-
-  // const optionsairbnb = {
-  //   method: 'GET',
-  //   url: 'https://airbnb13.p.rapidapi.com/search-location',
-  //   params: {
-  //     location: 'crozon',
-  //     checkin: '2023-09-16',
-  //     checkout: '2023-09-17',
-  //     adults: '2',
-  //     children: '0',
-  //     infants: '0',
-  //     pets: '0',
-  //     page: '1',
-  //     currency: 'EUR',
-  //   },
-  //   headers: {
-  //     'X-RapidAPI-Key': `${process.env.REACT_APP_ACCESS_KEY}`,
-  //     'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com',
-  //   },
-  // };
-
-  // async function getRoomsAirbnb() {
-  //   setLoading(true);
-  //   try {
-  //     const response = await axios(optionsairbnb);
-  //     const data = response.data.results;
-  //     setRooms(data);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  //   setLoading(false);
-  // }
+  const [singleProduct, setSingleProduct] = useState([]);
 
   useEffect(() => {
     setLoading(false);
@@ -84,6 +52,8 @@ const AppProvider = ({ children }) => {
         Type,
         sliderValue,
         setSliderValue,
+        singleProduct,
+        setSingleProduct,
       }}
     >
       {children}
