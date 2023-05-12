@@ -5,11 +5,6 @@ import Room3 from '../Images/room7.jpg';
 import { Link } from 'react-router-dom';
 
 const Featured = () => {
-  const [hover, setHover] = useState(false);
-
-  const detailsfeatured = () => {
-    setHover(true);
-  };
   return (
     <section className='mb-20 mx-auto max-w-5xl mt-10 text-lg px-3 '>
       <h2 className='font-bold text-3xl text-teal-600 mb-10'>
@@ -29,10 +24,7 @@ const Featured = () => {
             </p>
           </div>
         </article>
-        <article
-          className=' rounded-lg p-2 relative text-center '
-          onMouseOver={detailsfeatured}
-        >
+        <article className=' rounded-lg p-2 relative text-center '>
           <img className=' w-full h-[200px] rounded-md' src={Room2} alt='' />
 
           <div className='opacity-0 hover:opacity-100  absolute top-4 left-0 text-white py-4 px-3 bg-teal-500/80'>

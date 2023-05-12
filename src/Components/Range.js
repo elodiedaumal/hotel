@@ -8,7 +8,7 @@ const Range = () => {
   };
 
   return (
-    <div className='w-28 '>
+    <div className='max-w-sm md:w-28 md:p-0  '>
       <h3 className=''>Price: </h3>
       <p className=' text-sm'>50€ to {sliderValue}€</p>
       <Slider

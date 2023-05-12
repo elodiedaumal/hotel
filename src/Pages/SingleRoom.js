@@ -11,10 +11,13 @@ const SingleRoom = () => {
   return (
     <section className='max-w-6xl mx-auto p-2 my-10'>
       {rooms
-        .filter((item) => item.id.toLowerCase().includes(id.toLowerCase()))
+        .filter((item) => item.id.toLowerCase() === id.toLowerCase())
 
         .map((room) => (
-          <div key={room.id} className='grid grid-cols-2 gap-6 '>
+          <div
+            key={room.id}
+            className='flex flex-col md:grid md:grid-cols-2 gap-6 '
+          >
             <h2 className='col-span-full text-4xl font-bold text-center '>
               {room.name}
             </h2>

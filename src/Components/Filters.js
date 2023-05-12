@@ -2,15 +2,8 @@ import { useGlobalContext } from '../context';
 import Range from './Range';
 
 const Filters = () => {
-  const {
-    selectguests,
-    selectbedrooms,
-
-    text,
-    setText,
-    selectview,
-    selectype,
-  } = useGlobalContext();
+  const { selectguests, selectbedrooms, text, setText, selectview, selectype } =
+    useGlobalContext();
 
   const handleSubmit = (e) => {
     setText(e.target.value);
@@ -19,7 +12,7 @@ const Filters = () => {
   const flexfilter = 'flex flex-col gap-2';
 
   return (
-    <section className='flex justify-between'>
+    <section className='flex justify-between flex-col  sm:grid sm:grid-cols-2 sm:gap-x-5 lg:flex lg:flex-row '>
       <form className={flexfilter}>
         <label htmlFor='guests'>Name of the room</label>
         <input
