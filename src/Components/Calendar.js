@@ -22,10 +22,14 @@ const CalendarComp = () => {
       {Event.filter((item) => item.id - 1 === month.getMonth()).map(
         ({ id, event }) => {
           return (
-            <div key={id}>
-              <ul>
+            <div key={id} className='my-10'>
+              <ul className='max-w-5xl mx-auto list-disc px-8 '>
                 {event.map((singleevent, index) => {
-                  return <li key={index}>{singleevent}</li>;
+                  return (
+                    <li className='mb-2' key={index}>
+                      {singleevent}
+                    </li>
+                  );
                 })}
               </ul>
             </div>
