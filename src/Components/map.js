@@ -32,7 +32,7 @@ const Map = () => {
           <Marker position={center} />
         </GoogleMap>
       )} */}
-      heloo
+
       <MapContainer
         center={[48.2261384, -4.5042244]}
         zoom={13}

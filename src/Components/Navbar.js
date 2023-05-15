@@ -90,21 +90,21 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={openSidebar}
-              to='/'
+              to='/cafe'
               className='block mt-4  text-teal-200 hover:text-white'
             >
-              Restaurant
+              Café de la Baie
             </Link>
             <Link
               onClick={openSidebar}
-              to='/'
+              to='/contact'
               className='block mt-4  text-teal-200 hover:text-white'
             >
               Contact
             </Link>
             <Link
               onClick={openSidebar}
-              to='/'
+              to='/tourism'
               className='block mt-4  text-teal-200 hover:text-white'
             >
               Tourism
