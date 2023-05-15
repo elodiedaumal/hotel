@@ -34,6 +34,7 @@ const Filters = () => {
           onChange={selectguests}
         >
           <option value='2'>2-persons</option>
+          <option value='3'>3-persons</option>
           <option value='4'>4-persons</option>
           <option value='5'>5-persons</option>
           <option value='6'>6-persons</option>

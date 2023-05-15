@@ -101,9 +101,11 @@ const SingleRoom = () => {
               <p className='font-bold text-3xl text-teal-600 my-4 '>
                 Important
               </p>
-              <p className='  font-bold mb-4'>
-                Le check-in se fait à l'hotel au 46 boulevard de la plage
-              </p>
+              {room.category !== 'Hotel' && (
+                <p className='  font-bold mb-4'>
+                  Le check-in se fait à l'hotel au 46 boulevard de la plage
+                </p>
+              )}
               <div className='flex gap-2'>
                 <TbWheelchairOff className=' text-2xl text-teal-600' />
 

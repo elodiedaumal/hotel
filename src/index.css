@@ -29,3 +29,9 @@
   height: 25rem;
   width: 100%;
 }
+
+.leaflet-container {
+  height: 25rem;
+  width: 100%;
+  z-index: 0;
+}
