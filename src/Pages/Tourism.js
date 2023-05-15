@@ -1,5 +1,11 @@
+import CalendarComp from '../Components/Calendar';
+
 const Tourism = () => {
-  return <div>Tourism</div>;
+  return (
+    <div>
+      <CalendarComp />
+    </div>
+  );
 };
 
 export default Tourism;

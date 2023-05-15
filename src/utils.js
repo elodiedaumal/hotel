@@ -372,3 +372,99 @@ export const RoomsData = [
     ],
   },
 ];
+
+export const Event = [
+  {
+    id: 1,
+    month: 'Jan',
+    event: [`Pas d'évenement`],
+  },
+  {
+    id: 2,
+    month: 'Feb',
+    event: ['Braderie du livre (Bibliothèque Henri-Queffélec)'],
+  },
+  {
+    id: 3,
+    month: 'Mar',
+    event: ['Le Printemps des poètes (Bibliothèque Henri-Queffélec)'],
+  },
+  {
+    id: 4,
+    month: 'Apr',
+    event: [`Pas d'évenement`],
+  },
+  {
+    id: 5,
+    month: 'May',
+    event: [
+      `Week-end de l’Ascension : Grand Prix de l’école navale (rond C dans l’anse de Morgat en partenariat logistique avec le Centre nautique de Crozon-Morgat) et Pen ar Bed Paddle Race (Presqu’île Sport Côtiers)`,
+      'Course pédestre, la Presqu’îlienne (Presqu’île de Crozon Jogging Club).',
+    ],
+  },
+  {
+    id: 6,
+    month: 'Jun',
+    event: [
+      `Généralement le 1er samedi du mois : opération « plages propres » (mairie de Crozon)`,
+      'Le vendredi le plus proche du 21 juin : Fête de la musique à Morgat (et animations musicales à Crozon centre-ville le samedi matin) (associations culturelles et mairie de Crozon).',
+    ],
+  },
+  {
+    id: 7,
+    month: 'Jul',
+    event: [
+      `Les Mardis de Morgat, soirées festives et musicales avec déambulations (fanfares, arts de la rue), concerts et marché artisanal nocturne`,
+      'Les festivités du 14 juillet à Morgat (défilé au lampion, feu d’artifice et fest-noz) sans oublier le thon grillé sur le Port (USCM)',
+      `La Fête de la mer au Fret (ASPMF) - Presqu'île de Crozon`,
+      `Les mercredis d’initiation à la danse bretonne sur le port de Morgat`,
+      `Exposition Peintures et sculpture en presqu’île (Alisées)`,
+      `Caravan’ Fest (Birvidik)`,
+      `Les 30 Miles de Morgat (SHYC)`,
+      `Festival Les vendredis de musiqueS à Crozon (juillet et août) sur la Presqu'île de Crozon`,
+    ],
+  },
+  {
+    id: 8,
+    month: 'Aug',
+    event: [
+      `1er WE (vendredi, samedi et dimanche) : Festival du bout du monde`,
+      `Les Mardis de Morgat, soirées festives et musicales avec déambulations (fanfares, arts de la rue), concerts et 
+marché artisanal nocturne - Une soirée spéciale « arts de la rue »`,
+      `Exposition Peintures et sculpture en presqu’île (Alisées)`,
+      `Les mercredis d’initiation à la danse bretonne sur le port de Morgat`,
+      `Moules frites sur le port de Morgat (Association pour le don du sang)`,
+      `15 août : vide-grenier au Fret (ASPMF) et thon grillé à Morgat (USCM)`,
+      `Le Labour est dans le pré (ARPMP)`,
+    ],
+  },
+  {
+    id: 9,
+    month: 'Sep',
+    event: [`Pas d'évenement`],
+  },
+  {
+    id: 10,
+    month: 'Oct',
+    event: [
+      `Presqu’île Paddle Race (Presqu’île Sports Côtiers)`,
+      `Semaine bleue (CCAS)`,
+      `Bourse auto-moto (Les Deuches du bout du monde)`,
+      `Vacances de la Toussaint : fest-noz (Startijenn)`,
+    ],
+  },
+  {
+    id: 11,
+    month: 'Nov',
+    event: [`Téléthon (Presqu’iléthon)`, `Repas des seniors (CCAS)`],
+  },
+  {
+    id: 12,
+    month: 'Dec',
+    event: [
+      `Marché de Noël`,
+      `Repas des seniors (CCAS)`,
+      `Hibiscus Party, compétition de wind-surf, surf et paddle (CNCM)`,
+    ],
+  },
+];
