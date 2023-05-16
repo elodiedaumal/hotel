@@ -2,13 +2,14 @@ import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar';
 import { useState } from 'react';
 import { Event } from '../utils';
+import { BsFillCheckSquareFill } from 'react-icons/bs';
 
 const CalendarComp = () => {
   const [month, setMonth] = useState(new Date());
 
   return (
     <>
-      <div className='max-w-5xl mx-auto'>
+      <div className='max-w-5xl mx-auto mt-10'>
         <Calendar
           onChange={setMonth}
           value={month}
@@ -23,12 +24,15 @@ const CalendarComp = () => {
         ({ id, event }) => {
           return (
             <div key={id} className='my-10'>
-              <ul className='max-w-5xl mx-auto list-disc px-8 '>
+              <ul className='max-w-5xl mx-auto  px-8 '>
                 {event.map((singleevent, index) => {
                   return (
-                    <li className='mb-2' key={index}>
-                      {singleevent}
-                    </li>
+                    <div className='grid gap-5 items-center  grid-cols-10 '>
+                      <BsFillCheckSquareFill className='text-xl' />
+                      <li className='mb-4 col-span-9 ' key={index}>
+                        {singleevent}
+                      </li>
+                    </div>
                   );
                 })}
               </ul>

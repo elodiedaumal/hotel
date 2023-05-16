@@ -15,7 +15,7 @@ const myIcon = new L.Icon({
 
 const Map = () => {
   return (
-    <div className='max-w-5xl mx-auto'>
+    <div className='max-w-5xl mx-auto '>
       <MapContainer
         center={[48.2261384, -4.5042244]}
         zoom={13}
