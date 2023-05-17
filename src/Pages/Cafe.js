@@ -1,46 +1,131 @@
+import buffet from '../Images/PDJ.jpg';
+const title = 'text-xl uppercase font-bold text-teal-600';
+const price = 'text-xl text-orange-800';
+
 const Cafe = () => {
   return (
-    <section className='max-w-4xl text-center mx-auto items-center flex flex-col gap-10 mb-10'>
-      <h1 className='text-4xl mt-10'>Café de la Baie</h1>
-      <p className='font-medium'>
-        Le Café de l'Hôtel de la Baie propose chaque jour un petit-déjeuner
-        servi sous forme de buffet avec des produits locaux et variés. Notre
-        salon de thé est ouvert à tous et vous pourrez aussi y déguster des thés
-        & cafés du monde ainsi que des gâteaux et douceurs faits maison.
-      </p>
-      <h2 className='font-bold text-2xl'>
-        Nous proposons des plateaux repas sur demande à l'avance durant toute
-        l'année.
-      </h2>
-      <div className='grid grid-cols-3 gap-5'>
-        <div className='flex flex-col'>
-          <h2 className='text-2xl font-bold'>Petits-déjeuners</h2>
-          <p>
-            Le petit-déjeuner est servi de 07h00 à 10h30 en semaine et de 08h00
-            à 11h le week-end. Salé/sucré, il y en a pour tous les goûts, vous y
-            trouverez un large choix de tartes, gâteaux, quiches etc.. le tout
-            fait maison!
-          </p>
+    <section className='max-w-5xl mx-auto items-center flex flex-col gap-10 mb-10'>
+      <h1 className='text-4xl mt-10 flex flex-col gap-2 text-center'>
+        Café de la Baie{' '}
+        <span className='text-2xl'>
+          Ouvert à tous tout les jours à partir de 8h.
+        </span>
+      </h1>
+
+      <div className='text-md text-gray-600 flex flex-col gap-10 items-center justify-center px-5'>
+        <div className='flex flex-col gap-5 lg:flex-row items-center  '>
+          <div className='max-w-[400px]'>
+            <img src={buffet} alt='buffet petit déjeuner' />
+          </div>
+          <div className='max-w-[600px] flex flex-col gap-2'>
+            <h2 className={title}>Buffet Petit-déjeuner</h2>
+            <p className={price}>15€</p>
+            <div className='flex-col gap-1'>
+              <p>
+                Pour profiter pleinement de votre séjour nous vous proposons
+                chaque matin <strong>un buffet continental</strong> au
+                rez-de-chaussée de l’hôtel, dans notre salon de thé (pas de
+                service en chambre).
+              </p>
+              <p>
+                <strong>Servi entre 7h et 10h</strong> en semaine et le week-end
+                entre 8h et 11h. Nous vous proposons un grand choix de produits
+                frais et faits maison tels que{' '}
+                <strong> des spécialités bretonnes,</strong> des gâteaux du
+                jour, des oeufs, des salades de fruits, de la charcuterie, du
+                fromage, des viennoiseries, un assortiment de pain, des
+                croques-monsieur, des jus de fruits, des boissons chaudes…{' '}
+                <strong>
+                  {' '}
+                  Tout cela face à la mer pour prolonger le plaisir et en
+                  terrasse lors des beaux jours !
+                </strong>
+              </p>
+            </div>
+          </div>
         </div>
-        <div className='flex flex-col'>
-          <h2 className='text-2xl font-bold'>Petite restauration</h2>
-          <h3>Le midi, durant l'été</h3>
-          <p>
-            Venez profiter de notre belle terrasse ensoleillée avec vue sur la
-            Baie de Douarnenez. Bières, glaces, boissons fraîches et petite
-            restauration, la vie est douce en presqu'île!
-          </p>
+        <div className='flex flex-col gap-5 lg:flex-row-reverse items-center  '>
+          <div className='max-w-[400px]'>
+            <img src={buffet} alt='buffet petit déjeuner' />
+          </div>
+          <div className='max-w-[600px]'>
+            <h2 className={title}>Petit-déjeuner express</h2>
+
+            <p className={price}>10€</p>
+            <div className='flex-col gap-1'>
+              <p>
+                Tout comme la formule buffet, vous pouvez prendre votre
+                petit-déjeuner au salon de thé{' '}
+                <strong> entre 7h et 10h en semaine</strong> et le{' '}
+                <strong>week-end entre 8h et 11h</strong> (pas de service en
+                chambre).
+              </p>
+              <p>
+                Il se présente sous forme de plateau comprenant un assortiment
+                de pain et de viennoiserie, du beurre, de la confiture, un jus
+                de fruit et une boisson chaude au choix, il est préparé par nos
+                équipes lors de votre arrivée au petit-déjeuner. Lui aussi se
+                déguste{' '}
+                <strong>
+                  {' '}
+                  face à la mer et en terrasse lors des beaux jours !
+                </strong>
+              </p>
+            </div>
+          </div>
         </div>
-        <div className='flex flex-col'>
-          <h2 className='text-2xl font-bold'>Salon de thé</h2>
-          <p>
-            Notre salon de thé est ouvert toute l'année et vous propose thés,
-            cafés ou autres boisson fraiche ainsi que des pâtisseries bretonnes
-            faites maison.
-          </p>
+        <div className='flex flex-col gap-5 lg:flex-row items-center  '>
+          <div className='max-w-[400px]'>
+            <img src={buffet} alt='buffet petit déjeuner' />
+          </div>
+          <div className='max-w-[600px]'>
+            <h2 className={title}>Plateaux repas</h2>
+            <p className={price}>19€</p>
+            <div className='flex-col gap-1'>
+              <p>
+                Tout au long de l’année, nous vous proposons{' '}
+                <strong> des plateaux repas</strong> à consommer au
+                rez-de-chaussée ou en chambre.
+              </p>
+              <p>
+                Ils se composent{' '}
+                <strong> d’un plat, d’un dessert et d’une boisson.</strong>
+              </p>
+              <p>
+                Vous aurez le choix entre des quiches et des croques monsieurs
+                faits maison accompagnés d’une salade de crudités ainsi qu’un
+                dessert fait maison et notamment des{' '}
+                <strong>spécialités bretonnes.</strong> Ils sont à commander la
+                veille auprès de la réception qui vous donnera le menu afin de
+                <strong> faire votre choix.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col gap-5 lg:flex-row-reverse items-center  '>
+          <div className='max-w-[400px]'>
+            <img src={buffet} alt='buffet petit déjeuner' />
+          </div>
+          <div className='max-w-[600px]'>
+            <h2 className={title}>Bar, salon de thé et snack </h2>
+            <p className={price}>de Juin à Septembre</p>
+            <div className='flex-col gap-1'>
+              <p>
+                Venez déguster nos <strong>coupes glacées,</strong> crêpes,
+                gâteaux maisons ou <strong> croque monsieur</strong> toute la
+                journée. <strong> Vue sur la mer garanti.</strong> Nous
+                proposons également des <strong> assiettes apéro</strong>{' '}
+                (marine ou charcuterie) pour accompagner votre{' '}
+                <strong>cidre ou bière bretonne.</strong>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <h2 className='text-2xl'> See our menu</h2>
+
+      <h2 className='text-2xl'> See our full menu</h2>
+      <p>Image of the menu</p>
+      <img src='' alt='' />
     </section>
   );
 };

@@ -3,8 +3,8 @@ import FotosTourism from '../Components/FotosTourism';
 const margin = 'my-4 text-gray-800';
 const Tourism = () => {
   return (
-    <div>
-      <div className='text-center mx-auto max-w-5xl'>
+    <div className='text-center mx-auto max-w-5xl px-5 '>
+      <div>
         <h2 className='text-4xl font-bold my-5'>
           Activités sur la Presqu'île de Crozon
         </h2>

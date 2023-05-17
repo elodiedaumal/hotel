@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <header className='text-center my-5'>
+      <header className='text-center my-5 px-5'>
         <h2 className='text-3xl'>
           Horaires de la réception: de 9h à 12h et de 15h à 19h
         </h2>{' '}
@@ -10,7 +10,7 @@ const Contact = () => {
           hotel.delabaie@orange.fr
         </h2>
       </header>
-      <div class='w-full md:w-96 md:max-w-full mx-auto my-10'>
+      <div class='w-full md:w-96 md:max-w-full mx-auto my-10 px-5'>
         <div class='p-6 border border-gray-300 sm:rounded-md'>
           <form
             method='POST'
@@ -74,7 +74,7 @@ const Contact = () => {
             focus:ring-opacity-50
           '
                 rows='3'
-                placeholder='We are here to help you. (Note that no booking can be made over email as a credit card number will be needed.'
+                placeholder='We are here to help you. (Note that no booking can be made over email as a credit card number will be needed.)'
               ></textarea>
             </label>
             <div class='mb-6 text-right'>
