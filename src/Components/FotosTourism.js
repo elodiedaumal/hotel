@@ -58,9 +58,10 @@ const FotosTourism = () => {
   return (
     <section className='py-5 mx-auto  max-w-5xl'>
       <div className='w-11/12 mx-auto grid md:grid-cols-3 gap-2'>
-        {photos.map((image, index) => {
-          return <Photo key={index} {...image} />;
-        })}
+        {photos &&
+          photos.map((image, index) => {
+            return <Photo key={index} {...image} />;
+          })}
       </div>
       {loading && <div className='loading'></div>}
     </section>
