@@ -6,7 +6,7 @@ const searchUrl = `https://api.unsplash.com/search/photos/`;
 const key = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`;
 
 const FotosTourism = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [photos, setPhotos] = useState([]);
 
   const [newImages, setNewImages] = useState(false);
