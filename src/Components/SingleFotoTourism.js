@@ -1,4 +1,4 @@
-const Photo = (prop) => {
+const Photo = (prop = []) => {
   const {
     urls: { regular },
     alt_description,
