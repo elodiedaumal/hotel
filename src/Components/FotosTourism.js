@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Photo from './SingleFotoTourism';
 
 const searchUrl = `https://api.unsplash.com/search/photos/`;
@@ -8,8 +8,6 @@ const key = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`;
 const FotosTourism = () => {
   const [loading, setLoading] = useState(true);
   const [photos, setPhotos] = useState([]);
-
-  const [newImages, setNewImages] = useState(false);
 
   const fetchImages = async () => {
     setLoading(true);
@@ -26,10 +24,9 @@ const FotosTourism = () => {
       setPhotos((oldPhotos) => {
         return data.results;
       });
-      setNewImages(false);
+
       setLoading(false);
     } catch (error) {
-      setNewImages(false);
       setLoading(false);
       console.log(error);
     }
