@@ -62,7 +62,9 @@ const Navbar = () => {
           </Link>
           <button>
             <Link
-              to='/'
+              to='https://www.secure-direct-hotel-booking.com/module_booking_engine/index.php?id_etab=3e613df413c8f30ad01f3d79bf31dcf7&langue=francais'
+              target='_blank'
+              rel='noopener noreferrer'
               className='ml-10 inline-block text-lg px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 '
             >
               Book Now
@@ -113,7 +115,9 @@ const Navbar = () => {
           <div>
             <Link
               onClick={openSidebar}
-              to='/'
+              to='https://www.secure-direct-hotel-booking.com/module_booking_engine/index.php?id_etab=3e613df413c8f30ad01f3d79bf31dcf7&langue=francais'
+              target='_blank'
+              rel='noopener noreferrer'
               className='inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4'
             >
               Book Now
